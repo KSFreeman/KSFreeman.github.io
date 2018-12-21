@@ -176,11 +176,11 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        <h3>Oyster Genome EEMS</h3>
+                        <p> 
+			<a href="https://github.com/dipetkov/eems/blob/master/Documentation/EEMS-doc.pdf">EEMS</a> is a program that estimates effective migration rate among populations to identify areas of unusually high or low gene flow. For this project, I plotted EEMS results from an analysis done on sequencing data from eastern oysters that was collected as part of the <a href="https://github.com/jpuritz/OysterGenomeProject">Eastern Oyster Genome Project</a>. Note that this EEMS analysis is not included in the current version of the Eastern Oyster Genome repository because it was done with an earlier version of the sequencing data that had some irregularities. I still think it is a nice project to include here becausethe README includes visually interesting plots and the notes that I included in the repository give a good glimpse into how I think through a problem.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/KSFreeman/oyster-genome-eems">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -192,15 +192,32 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Random Forest Classifier for Detecting Small QTLs</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This is an in-progress project that I have been working on mostly independently as an extension of the Test The Tests project. Working based on recent publications in the field, I trained a random forest classifier on existing simulation data and compared its accuracy to the existing genome scans we were testing. A nice overview of what I found is in the README. I am currently working on writing new simulations to more thoroughly test the method. The project was done in Jupyter notebooks using numpy, pandas, and scikit-learn.  
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/TestTheTests/TTT_RecombinationGenomeScans/tree/machine-learning/ml_project#overview-of-the-pipeline">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+		
+		<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Parallelization of CellProfiler</h3>
+                        <p>
+                            <a href="https://cellprofiler.org/">CellProfiler</a> is a tool developed by the Broad Institute to make it easy for biologists to apply computer vision algorithms to their microscopy data. As part of a project on ocean acdification, our lab generated 1000 images of oyster larvae at different timepoints. The CellProfiler GUI is easy to use but running it with 1000 images is too computationally costly on our equipment. To solve this issue I created a pipeline in bash that runs CellPofiler from the command line on a set of images in parallel so that we could do our analysis on our cluster. This is some of the more extensive bash scripting that I have done and I am particularly proud of the thorough input checking I implemented.  
+                        </p>
+                        <a href="https://github.com/DrK-Lo/oyster_larvae_photo_analysis">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
             </div>
         </div>
     </div>
